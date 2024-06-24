@@ -23,6 +23,9 @@ RUN a2enmod rewrite && \
     sed -i 's!/var/www/html!/var/www/html/moodle!g' /etc/apache2/sites-available/000-default.conf && \
     service apache2 restart
 
+
+ECHO "funfou"
+
 EXPOSE 80
 
 CMD ["apachectl", "-D", "FOREGROUND"]
