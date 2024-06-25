@@ -24,8 +24,6 @@ RUN a2enmod rewrite && \
     service apache2 restart
 
 
-ECHO "funfou"
-
 EXPOSE 80
 
 CMD ["apachectl", "-D", "FOREGROUND"]
